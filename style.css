@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
+}
+
+.main-container a {
+    padding-left: 40px;
+    text-decoration: none;
+}
+
+.main-container a:hover {
+    color: rgb(198, 206, 87);
+}
+
+.main-container .logo {
+    color: black;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.header-right a {
+    padding-right: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+
+/*Title-img styling*/
+
+.title-img {
+    display: flex;
+    padding: 40px;
+}
+
+.title-para {
+    position: static;
+    overflow: hidden;
+}
+
+.title-para h1 {
+    margin-top: 90px;
+    font-size: 110px;
+}
+
+.title-para p {
+    font-size: 14px;
+    padding-left: 53px;
+}
+
+.pic {
+    margin: 70px 0 0 79px;
+}
+
+
+/* Images style */
+
+.row {
+    display: flex;
+    margin-left: 170px;
+    margin-top: 120px;
+}
+
+.img1 img {
+    height: 600px;
+    width: 500px;
+}
+
+.about h1 {
+    position: static;
+    font-size: 30px;
+    overflow: hidden;
+    margin-top: 70px;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+.about p {
+    padding-left: 100px;
+    width: 60%;
+    margin-top: 20px;
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 100px;
+}
+
+
+/* Our Menu */
+
+.our-menu {
+    display: grid;
+    padding-left: 100px;
+}
+
+.column img {
+    width: 21vw;
+    height: 60vh;
+}
+
+.img img {
+    width: 100%;
+    height: 600px;
+}
+
+.book-table {
+    position: relative;
+    text-align: center;
+}
+
+.text-style {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    overflow: hidden;
+}
+
+.text-style h2 {
+    margin-bottom: 60px;
+    font-size: 70px;
+    color: white;
+}
+
+.text-style input {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    height: 50px;
+    text-indent: 10px;
+    /*placeholder text*/
+    background-color: transparent;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn {
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    overflow: hidden;
+}
+
+.btn button {
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: crimson;
+}
+
+.btn button:hover {
+    color: white;
+}
