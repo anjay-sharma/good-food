@@ -71,6 +71,39 @@
             </div>
         </div>
     </div>
+    <div id="dark-bg" class="bg-dark">
+        <h2 class="title2">Events at the Good Food</h2>
+        <div class="row2">
+            <ul id="pilla-tab" class="nav-pills">
+                <li class="nav-item">
+                    <a id="pills-home" class="nav-links active" href="foods.html">Food</a>
+                </li>
+                <li class="nav-item">
+                    <a id="pills-profile" class="nav-links" href="juices.html">Juices</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var elements = document.getElementsByClassName("nav-links");
+
+        var myFunction = function(e) {
+            e.preventDefault();
+            let current = document.getElementsByClassName('active');
+            current[0].classList.remove("active");
+            if (this.getElementsByClassName('active').length) {
+                this.classList.remove("active");
+            } else {
+                this.classList.add("active");
+            }
+        };
+
+        for (var i = 0; i < elements.length; i++) {
+            let _this = elements[i];
+            _this.addEventListener('click', myFunction, false);
+        }
+    </script>
 </body>
 
 </html>
