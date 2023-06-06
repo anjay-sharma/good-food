@@ -68,6 +68,7 @@
     margin: 70px 0 0 79px;
 }
 
+
 /* Images style */
 
 .row {
@@ -116,60 +117,74 @@
     height: 60vh;
 }
 
+
+/* Book a table */
+
 .book-table {
     position: relative;
     text-align: center;
 }
 
-.img img {
-    opacity: 0.8;
+.book-table img {
     width: 100%;
     height: 600px;
-    z-index: 1;
 }
 
-.text-style {
+.book-table h1 {
     position: absolute;
-    top: 30%;
-    left: 15%;
-    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -235%);
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #fff;
+    text-transform: uppercase;
 }
 
-.text-style h2 {
-    margin-bottom: 60px;
-    font-size: 70px;
-    color: white;
-}
-
-.text-style input {
-    color: white;
-    font-weight: 500;
-    font-size: 20px;
-    height: 50px;
-    text-indent: 10px;
-    /*placeholder text*/
-    background-color: transparent;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
-
-.btn {
+.text-input {
     position: absolute;
-    bottom: 10%;
-    left: 45%;
-    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
 }
 
-.btn button {
-    font-size: 30px;
+.text-input input {
+    font-size: 1rem;
+    width: 22%;
+    padding: 15px;
+    color: #fff;
+    background: transparent;
+}
+
+.text-input input::placeholder {
+    padding: 20px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.text-input button {
     padding: 10px;
-    cursor: pointer;
+    font-size: 1.2rem;
+    width: 170px;
+    font-family: sans-serif;
     border: none;
+    outline: none;
     background-color: crimson;
+    cursor: pointer;
+    border-radius: 4px;
+    transform: translateY(110px);
 }
 
-.btn button:hover {
-    color: white;
+.text-input button:hover {
+    background-color: #4b27db;
+    color: #fff;
 }
+
+
+/* Another section */
 
 .bg-dark {
     height: 100vh;
@@ -209,4 +224,21 @@
     color: white;
     padding: 10px 60px;
     background-color: crimson;
+}
+
+.img-holder {}
+
+.food-juice {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.food-juice.juice {
+    display: none;
+}
+
+.container1 img {
+    height: 250px;
+    width: 400px;
 }
